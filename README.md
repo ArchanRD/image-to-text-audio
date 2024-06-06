@@ -45,3 +45,23 @@ To run the program using a web interface, run
 ```bash
   streamlit run app.py
 ```
+
+## Add environemnt variables
+1. **Log in to Hugging Face**
+- Open your web browser and go to [Hugging Face](https://huggingface.co/)
+- Log in using your credentials. If you don't have an account, sign up for one.
+
+2. **Generate an Access Token:**
+- Once logged in, navigate to the [Tokens Settings](https://huggingface.co/settings/tokens) page.
+- Click on the "New token" button.
+- Provide a name for the token (e.g., my-read-token).
+- Select the "Read" permission from the options.
+- Click the "Generate" button to create the token.
+- Copy the generated token. Keep it secure and do not share it publicly.
+
+3. **Create a .env File:**
+- In the .env file, add the following line:
+  ```bash
+  HUGGINGFACEHUB_API_TOKEN=your_generated_token_here
+  ```
+- Replace your_generated_token_here with the actual token you copied in step 2.
